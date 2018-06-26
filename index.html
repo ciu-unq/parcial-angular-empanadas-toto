@@ -23,6 +23,10 @@
   <!-- PROMISE  -->
   <script src="node_modules/bluebird/js/browser/bluebird.min.js"></script>
 
+  <!-- GROWL -->
+  <link href="node_modules/angular-growl-v2/build/angular-growl.css" rel="stylesheet">
+  <script src="node_modules/angular-growl-v2/build/angular-growl.js"></script>
+
   <!-- TOTO-API  -->
   <script src="node_modules/toto-api/index.js"></script>  
 </head>
@@ -36,7 +40,11 @@
     </h1>
   </div>
 
+  <!-- donde se insertan las notificaciones de growl -->
+  <div growl></div>
+
   <div class="well-lg">
+    <!-- donde se inserta el partial actual -->
     <div ui-view></div>
   </div>
 
@@ -44,6 +52,7 @@
 
 <!-- js -->
 <script src="routes.js"></script>
+<script src="hola_mundo_controller.js"></script>
 <script src="app.js"></script>
 
 </body>
